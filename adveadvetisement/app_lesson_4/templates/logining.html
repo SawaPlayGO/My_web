@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <style>
+    </style>
+</head>
+{% block content %}
+<header>
+    <nav>
+        <ul>
+           <li><a href="{% url 'marmelads' %}">Главная</a></li>
+           <li><a href="#">О нас</a></li>
+           <li><a href="#">Услуги</a></li>
+           <li><a href="{% url 'logining' %}">Вход</a></li>
+           <li><a href="{% url 'top-sellers' %}">Топы продаж</a></li> 
+        </ul>
+      </nav>
+</header>
+<body>
+    <h1>Добро пожаловать</h1>
+    <div class="center-panel">
+        <div class="rounded-border">
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Электронная почта</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp", placeholder="name@mail.ru">
+                    <div id="emailHelp" class="form-text">Введите адрес электронной почты</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Пароль</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">  
+                    <label for="exampleTextarea" class="form-label">Немного о вас</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="5"></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Согласие с правилами и политикой <br> конфидециальности</label>
+                </div>
+                <a href="index.html"><button type="submit" class="btn btn-success">Войти</button></a>
+            </form>
+        </div>
+    </div>
+</body>
+{% endblock %}
+</html>

@@ -1,0 +1,44 @@
+.my-margin-left {
+    margin-left: 23px;
+    display: inline-block;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+
+.center-panel {  /* Централизация панели регистрации/логининга */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.rounded-border {
+    border: 1px solid #383838;
+    border-radius: 10px;
+    padding: 20px;
+}
+  
+
+.callout-info {
+    border-left-color: rgb(2, 202, 2);
+}

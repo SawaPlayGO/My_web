@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+{% block content %}
+<header>
+    <nav>
+        <ul>
+           <li><a href="{% url 'marmelads' %}">Главная</a></li>
+           <li><a href="#">О нас</a></li>
+           <li><a href="#">Услуги</a></li>
+           <li><a href="{% url 'logining' %}">Вход</a></li>
+           <li><a href="{% url 'top-sellers' %}">Топы продаж</a></li> 
+        </ul>
+      </nav>
+</header>
+<body>
+    <table>
+        <colgroup>
+            <col span="2" style="background:Khaki">
+            <col style="background-color:LightCyan">
+        </colgroup>
+        <tr>
+            <th>ТОП</th>
+            <th>Имя продовца</th>
+            <th>Заработано</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Мармеладный мастер</td>
+            <td>200 000 тыс. руб.</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Король мармеландии</td>
+            <td>150 000 тыс. руб.</td>
+        </tr>
+    </table>
+    {% endblock %}
+</body>
+</html>

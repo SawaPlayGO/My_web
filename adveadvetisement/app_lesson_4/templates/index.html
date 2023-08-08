@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>{% block title %}Главная {% endblock %}</title>
+</head>
+<header>
+    {% block content %}
+    <nav>
+        <ul>
+           <li><a href="{% url 'marmelads' %}">Главная</a></li>
+           <li><a href="#">О нас</a></li>
+           <li><a href="#">Услуги</a></li>
+           <li><a href="{% url 'logining' %}">Вход</a></li>
+           <li><a href="{% url 'top-sellers' %}">Топы продаж</a></li> 
+        </ul>
+      </nav>
+</header>
+
+<body>
+    <div class="alert alert-success" role="alert">
+        Походу сегодня мармеладные червечки по скидке 50%. Успей купить.
+      </div> 
+          <div class="my-margin-left">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://ie.wampi.ru/2023/07/03/imgonline-com-ua-Blur-m69ftlYgnH.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Сладкие мармеладные фрукты</h5>
+                      <p class="card-text">Очень вкусные и ярки мармеладные фрукты позволят удивить да же самого дотошного ребёнка.</p>
+                      <a href="#" class="btn btn-success">Купить</a>
+                  </div>
+              </div>
+          </div>
+          <div class="my-margin-left">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://ic.wampi.ru/2023/07/03/imgonline-com-ua-Blur-hD9TuL4vMq.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Сладкие мармеладные червечки</h5>
+                      <p class="card-text">Червечки являются золотым стандартом в мармеладном мире. И нравятся всем без исключения детям.</p>
+                      <a href="#" class="btn btn-success">Купить</a>
+                  </div>
+              </div>
+          </div>
+          <div class="my-margin-left">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://im.wampi.ru/2023/07/03/11484707_l-e1525916946909.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Сладкие мармеладные мишки</h5>
+                      <p class="card-text">Очень необычная мила форма. Любой ребёнок будет неравнодушен к такому сюрпризу.</p>
+                      <a href="#" class="btn btn-success">Купить</a>
+                  </div>
+              </div>
+          </div>
+          <div class="my-margin-left">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://im.wampi.ru/2023/07/03/1614589972_29-p-konfeti-na-belom-fone-54.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Сладкие мармеладные конфеты</h5>
+                      <p class="card-text">За обёрткой скрывается небольшая порция мармелада выполненая в геометрической форме.</p>
+                      <a href="#" class="btn btn-success">Купить</a>
+                  </div>
+              </div>
+          </div>
+          {% endblock %}
+</html>
